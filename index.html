@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Form/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="Logo2.jpeg" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <title>EstrategiaRealForm</title>
+</head>
+
+<body>
+    <!-- Añadir esto después de cada campo de entrada en tus formularios -->
+    <div class="alert">Todos los campos son obligatorios.</div>
+
+    <div id="particles-js"></div>
+    <main class="container-form sign-up">
+        <header>
+            <div class="welcome-message">
+                <h1>Bienvenido a <span>Tu Página de Ajedrez</span></h1>
+                <p>Explora estrategias, aprende nuevas tácticas y mejora tu juego de ajedrez con nosotros.</p>
+            </div>
+        </header>
+        <section class="welcome-back">
+            <div class="message">
+                <button class="sign-up-btn">Iniciar Sesión</button>
+            </div>
+        </section>
+        <section class="formulario">
+            <h2 class="create-account">Crear una cuenta</h2>
+            <div class="iconos">
+                <div class="border-icon">
+                    <i class='bx bxl-instagram'></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-linkedin'></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-facebook-circle'></i>
+                </div>
+            </div>
+            
+            <p class="cuenta-gratis">Crear una cuenta gratis</p>
+            <form id="signup-form">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required>
+                <input type="button" value="Registrarse" onclick="validarFormulario('signup-form')">
+            </form>
+        </section>
+    </main>
+    <footer class="container-form sign-in">
+        <section class="formulario">
+            <h2 class="create-account">Iniciar Sesión</h2>
+            <div class="iconos">
+                <div class="border-icon">
+                    <i class='bx bxl-instagram'></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-linkedin'></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-facebook-circle'></i>
+                </div>
+            </div>
+            <p class="cuenta-gratis">¿Aún no tienes una cuenta?</p>
+            <form id="login-form">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required>
+                <input type="button" value="Iniciar Sesión" onclick="validarFormulario('login-form')">
+            </form>
+        </section>
+        <section class="welcome-back">
+            <div class="message">
+                <button class="sign-in-btn">Registrarse</button>
+            </div>
+        </section>
+    </footer>
+    <script src="/Form/particles-config.js"></script>
+    <script src="/Form/script.js"></script>
+</body>
+
+</html>
